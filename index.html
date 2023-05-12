@@ -153,13 +153,14 @@
             let trendItem = cont02.getElementsByClassName('item');
             let trendImgSrc0 = ['t0-0','t0-1','t0-2','t0-3'];
             let trendImgSrc1 = ['t1-0','t1-1','t1-2','t1-3'];
-            let trendImgSrc2 = ['t2-0','t2-1','t2-2','t2-3'];
+            let trendImgSrc2 = ['t2-0','t2-1','t2-2','t3-0','t3-1','t3-2'];
             let subNames0 = ['락드 키스 잉크 24아워 립컬러','레트로 매트 립스틱','파우더 키스 벨벳 블러 슬림 스틱','립펜슬']
             let subNames1 = ['파우더 키스 아이 섀도우','프로스트 립스틱','러스터 글래스 립스틱','엑스트라 미센션 블러쉬']
             let trendNames0 = ['루비 트루','루비 우','루비 뉴','레드']
             let trendNames1 = ['펠트 큐트','엔젤','노 포스트','인투 더 핑크']
             let picture0 = document.getElementsByClassName('picture0')[0];
             let picture1 = document.getElementsByClassName('picture1')[0];
+            let picture2 = document.getElementsByClassName('picture2')[0];
             
 
 
@@ -170,8 +171,9 @@
                 if(count%2 == 1 ){
                     titleText.innerHTML = '#ANGEL PINK'
                     cont02.style.backgroundColor = '#fc9b99' 
-                    picture0.src = 'img/'+trendImgSrc2[2]+'.png'
-                    picture1.src = 'img/'+trendImgSrc2[3]+'.png'
+                    picture0.src = 'img/'+trendImgSrc2[5]+'.png'
+                    picture1.src = 'img/'+trendImgSrc2[4]+'.png'
+                    picture2.src = 'img/'+trendImgSrc2[3]+'.png'
                     for(let i = 0 ; i < trendItem.length ; i++){
                         let img = trendItem[i].getElementsByTagName('img')[0];
                         let subName = trendItem[i].getElementsByTagName('p')[0];
@@ -188,6 +190,7 @@
                     cont02.style.backgroundColor = '#741614'
                     picture0.src = 'img/'+trendImgSrc2[0]+'.png'
                     picture1.src = 'img/'+trendImgSrc2[1]+'.png'
+                    picture2.src = 'img/'+trendImgSrc2[2]+'.png'
                     for(let i = 0 ; i < trendItem.length ; i++){
                         let img = trendItem[i].getElementsByTagName('img')[0];
                         let subName = trendItem[i].getElementsByTagName('p')[0];
